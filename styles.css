@@ -1,0 +1,134 @@
+html body{
+    min-width: 300px;
+color: black;
+background-color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+line-height: 1.2;
+scroll-behavior: smooth;
+
+}
+
+#navbar{
+    position: fixed;
+    min-width: 287px;
+    top:0px;
+    left:0px;
+    width:296px;
+    height:100%;
+    border-right: solid darkblue;
+
+}
+
+header{
+    color:black;
+    margin:10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: lighter;
+    color: darkblue;
+
+
+
+}
+
+#main-doc header{
+    text-align: left;
+    margin: 0px;
+
+}
+
+#navbar ul{
+    height:85%;
+    padding:0%;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+#navbar li{
+    color:#4d4e53;
+    border-top: 1px solid;
+    list-style:none;
+    position:relative;
+    width:100%;
+}
+
+#navbar a {
+    display:block;
+    padding:10px 30px;
+    color:#4d4e54;
+    text-decoration: none;
+    cursor: pointer;
+}
+#main-doc{ 
+    position: absolute;
+    margin-left:310px;
+    padding:20px;
+    margin-bottom:110px;
+
+}
+
+section article{
+    margin:15px 0px 0px 20px;
+
+}
+
+
+code{
+    display: block;
+    text-align: left;
+    font-size: 15px;
+    white-space: pre-line;
+    position:relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height:1.96;
+    background-color: #f6f6f6;
+    padding:15px;
+    margin:10px;
+    border-radius:5px;
+
+}
+
+@media only screen and (max-width:800px){
+    /*for smartphones */
+    #navbar ul{
+        border:1px solid;
+        height:207px;   
+    }
+    #navbar{
+        background-color: whitesmoke;
+        position: absolute;
+        top:0;
+        padding:0;
+        margin:0;
+        width:100%;
+        max-height:276px;
+        border:none;
+        z-index:1;
+        border-bottom: 2px solid blanchedalmond;
+    }
+
+    #main-doc{
+        position: relative;
+        margin-left: 0px;
+        margin-top: 280px;
+        
+    }
+}
+
+@media only screen and (max-width:480px){
+
+    #main-doc{
+        margin-left:-10px;
+
+    }
+
+    code{
+        margin-left:-20px;
+        width:100%;
+        padding:15px;
+        padding-left:10px;
+        padding-right:40px;
+        min-width:235px;
+    }
+    }
